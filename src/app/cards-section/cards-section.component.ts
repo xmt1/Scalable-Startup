@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CardService } from './card.service';
+import { Card } from '../models/card';
 
 @Component({
   selector: 'app-cards-section',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cards-section.component.css']
 })
 export class CardsSectionComponent implements OnInit {
+  cards: Card[];
 
-  constructor() { }
+  constructor(private cardService: CardService) { }
 
   ngOnInit() {
+    this.cards = this.cardService.getCards();
   }
 
 }

@@ -1,9 +1,18 @@
 :host {
   display: block;
-  height: 100vh;
   background-color: #1A237E;
+  min-height: 100vh;
 }
 
 mat-toolbar-row {
   justify-content: space-between;
+}
+
+header {
+  text-align: center;
+  color: #fff;
+}
+
+main {
+  margin-top: 30px;
 }

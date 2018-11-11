@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {MatSlideToggleModule, MatToolbarModule, MatCardModule} from '@angular/material';
+import {MatSlideToggleModule, MatToolbarModule, MatCardModule, MatButtonModule} from '@angular/material';
 import { CardsSectionComponent } from './cards-section/cards-section.component';
 import { CardComponent } from './cards-section/card/card.component';
 
@@ -19,7 +19,8 @@ import { CardComponent } from './cards-section/card/card.component';
     BrowserAnimationsModule,
     MatSlideToggleModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
