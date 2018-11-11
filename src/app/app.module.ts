@@ -5,10 +5,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatSlideToggleModule, MatToolbarModule, MatCardModule} from '@angular/material';
+import { CardsSectionComponent } from './cards-section/cards-section.component';
+import { CardComponent } from './cards-section/card/card.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CardsSectionComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
