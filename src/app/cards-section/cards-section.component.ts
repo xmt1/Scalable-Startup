@@ -17,9 +17,9 @@ export class CardsSectionComponent implements OnInit {
     ) { }
 
   ngOnInit() {
-    this.cards = this.cardService.getCards();
-    this.backendService.getCardData().subscribe(data => {
-      console.log(data);
+    // this.cards = this.cardService.getCards();
+    this.backendService.getCardData().subscribe((data: Card[]) => {
+      this.cards = data;
     });
   }
 

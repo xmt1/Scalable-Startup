@@ -7,7 +7,7 @@ const router = express.Router();
 const cardData = require('../data/cardData.json');
 
 router.get("", (req, res) => {
-  console.log(cardData);
+  res.send(cardData);
 });
 
 module.exports = router;
