@@ -1,3 +1,38 @@
 :host {
   display: block;
 }
+
+mat-card {
+  text-align: center;
+  transition: background-color .3s;
+  cursor: pointer;
+}
+
+mat-card:hover {
+  background-color: teal;
+}
+
+
+
+mat-card-header {
+  display: block;
+}
+
+mat-card-title {
+  color: teal;
+  font-size: .98rem !important;
+  transition: color .1s;
+}
+
+mat-card:hover mat-card-title {
+  color: #fff;
+}
+
+mat-card-subtitle {
+  color: rgb(32, 32, 179);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+
+
