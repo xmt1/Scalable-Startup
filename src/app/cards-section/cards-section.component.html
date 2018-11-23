@@ -2,5 +2,7 @@
   <ng-container *ngIf="!cardService.isAltCards">
       <app-card *ngFor="let card of cards" [card]="card"></app-card>
   </ng-container>
-  <app-alt-card></app-alt-card>
+  <ng-container *ngIf="cardService.isAltCards">
+      <app-alt-card *ngFor="let card of cards" [card]="card"></app-alt-card>
+  </ng-container>
 </section>

@@ -1,3 +1,18 @@
-<p>
-  alt-card works!
-</p>
+<mat-card>
+  <div>
+    <mat-card-header>
+      <mat-card-title>{{card.title}}</mat-card-title>
+    </mat-card-header>
+      
+    <mat-card-content>
+      <p>
+        {{card.content}}
+      </p>
+    </mat-card-content>
+  </div>
+  <div class="check">
+    <div class="check-box">
+        <mat-icon>check</mat-icon>
+    </div>
+  </div>
+</mat-card>

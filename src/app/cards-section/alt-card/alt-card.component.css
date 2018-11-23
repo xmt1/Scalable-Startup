@@ -1,0 +1,45 @@
+mat-card {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0;
+}
+
+::ng-deep .mat-card-header-text {
+  margin: 0;
+}
+
+mat-card div:first-child {
+  margin-left: 10px;
+  padding: 10px 0;
+}
+
+mat-card-content p {
+  line-height: 2;
+}
+
+.check {
+  width: 200px;
+  background-color: rgb(49, 49, 153);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-box {
+  width: 42px;
+  height: 42px;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transform: rotate(45deg);
+}
+
+.check-box mat-icon {
+  transform: rotate(-45deg);
+  color: #fff;
+}
+
+
+
