@@ -8,12 +8,14 @@ import { HttpClientModule }    from '@angular/common/http';
 import {MatSlideToggleModule, MatToolbarModule, MatCardModule, MatButtonModule} from '@angular/material';
 import { CardsSectionComponent } from './cards-section/cards-section.component';
 import { CardComponent } from './cards-section/card/card.component';
+import { AltCardComponent } from './cards-section/alt-card/alt-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardsSectionComponent,
-    CardComponent
+    CardComponent,
+    AltCardComponent
   ],
   imports: [
     BrowserModule,

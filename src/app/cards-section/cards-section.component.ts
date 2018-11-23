@@ -12,7 +12,7 @@ export class CardsSectionComponent implements OnInit {
   cards: Card[];
 
   constructor(
-    private cardService: CardService,
+    public cardService: CardService,
     private backendService: BackendService
     ) { }
 

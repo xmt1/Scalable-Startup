@@ -7,10 +7,15 @@ import { CARDS } from '../data/card-data';
 })
 export class CardService {
   cards: Card[] = CARDS;
+  isAltCards = false;
 
   constructor() { }
 
   getCards() {
     return this.cards;
+  }
+
+  changeCardLayout() {
+    this.isAltCards = this.isAltCards !== true;
   }
 }
